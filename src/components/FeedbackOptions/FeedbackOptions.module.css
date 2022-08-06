@@ -1,0 +1,39 @@
+.buttonsList {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: whitesmoke;
+  font-size: 16px;
+  text-transform: capitalize;
+  transition: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+  scale: 1.03;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.good {
+  composes: button;
+  background-color: rgba(0, 128, 0, 0.811);
+}
+
+.neutral {
+  composes: button;
+  background-color: rgba(166, 205, 50, 0.997);
+}
+
+.bad {
+  composes: button;
+  background-color: rgba(255, 71, 71, 0.936);
+}
